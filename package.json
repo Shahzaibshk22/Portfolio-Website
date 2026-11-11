@@ -1,0 +1,13 @@
+{
+  "name": "my-portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "scripts": {
+    "dev": "npx -y vite",
+    "build": "npx -y vite build",
+    "preview": "npx -y vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
