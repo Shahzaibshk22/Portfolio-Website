@@ -741,12 +741,31 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgba(3, 7, 12, 0.9);
+  flex-wrap: wrap;
+  gap: 12px 24px;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-top: 1px solid rgba(0, 242, 254, 0.12);
-  height: 100px;
+  min-height: 100px;
+  padding: 20px 16px;
   width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: #00f2fe;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* --- Responsive Breakpoints --- */
@@ -811,4 +830,6 @@ body {
   .radial-circle { width: 95px; height: 95px; }
   .radial-text { font-size: 1.05rem; }
   .radial-title { font-size: 0.88rem; }
+   .footer {flex-direction: column; justify-content: center; padding: 24px 16px; }
+  .footer p { font-size: 0.85rem; }
 }
